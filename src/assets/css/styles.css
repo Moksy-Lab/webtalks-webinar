@@ -1,0 +1,556 @@
+@import url(../styles/typography.css);
+@import url(../styles/layout.css);
+@import url(../styles/fonts.css);
+
+
+/* #nooks(nooksNavbar) #css starts  */
+.navbar{
+    display: contents !important;
+}
+.nooksNavbar .btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    font-weight: bold
+}
+
+.nooksNavbar .logo {
+    max-height: 50px
+}
+
+.nooksNavbar .navbar-open-icon {
+    display: inline
+}
+
+.nooksNavbar .navbar-close-icon {
+    display: none
+}
+
+.nooksNavbar .navbar-toggler[aria-expanded="true"] .navbar-open-icon {
+    display: none
+}
+
+.nooksNavbar .navbar-toggler[aria-expanded="true"] .navbar-close-icon {
+    display: inline
+}
+
+.nooksNavbar .navbar-light .navbar-toggler {
+    color: var(--dark);
+    border-color: var(--dark);
+    font-size: 25px;
+}
+.nooksNavbar .navbar-light .navbar-nav .nav-link {
+    color: var(--dark);
+}
+.nooksNavbar .navbar-light .navbar-nav .nav-link:focus, 
+.nooksNavbar .navbar-light .navbar-nav .nav-link:hover {
+        color: var(--primary);
+    }
+/* #nooks(nooksNavbar) #css ends  */
+
+/* #hurl(hurlHero) #css starts  */
+.hurlHero .DescriptionHeading {
+    font-weight: bolder;
+    font-size: 50px
+}
+
+.hurlHero .DescriptionPara {
+    color: var(--dark);
+    font-size: 18px
+}
+
+.hurlHero .descriptionImage img {}
+
+.hurlHero .searchBtn {
+    background-color: var(--primary);
+    color: var(--white)
+}
+
+.hurlHero .stroke {
+    color: var(--white);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--primary)
+}
+
+.hurlHero .form-control,
+.hurlHero .input-group-append {
+    border: none;
+    box-shadow: 0 3px 4px -1px var(--disabled);
+}
+
+.hurlHero .form-select {
+    border: 0px;
+    outline: none;
+}
+
+.hurlHero .form-control:hover,
+.hurlHero .form-control:focus {
+    box-shadow: 0 3px 4px -1px rgba(99, 99, 99, 0.2)
+}
+
+.hurlHero .input-group-append:focus {
+    box-shadow: 0 3px 4px -1px rgba(99, 99, 99, 0.2)
+}
+
+.hurlHero .dropdown-item:active {
+    background-color: var(--primary)
+}
+
+/* #hurl(hurlHero) #css ends  */
+
+/* #ruvia(ruviaRoadmap) #css starts  */
+.ruviaRoadmap {
+    overflow: hidden;
+}
+
+.ruviaRoadmap h1 {
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+.ruviaRoadmap .main-timeline:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.ruviaRoadmap .main-timeline .timeline {
+    border-right: 10px solid var(--dark);
+    width: 50%;
+    padding: 10px 20px 10px 0;
+    box-shadow: 10px 0 var(--dark);
+    float: left;
+}
+
+.ruviaRoadmap .main-timeline .timeline-content {
+    text-align: center;
+    display: block;
+    position: relative;
+    border-radius: 10px 10px;
+}
+
+.ruviaRoadmap .main-timeline .timeline-content:hover {
+    text-decoration: none;
+}
+
+.ruviaRoadmap .main-timeline .timeline-content:before,
+.ruviaRoadmap .main-timeline .timeline-content:after {
+    content: "";
+    background: var(--dark);
+    width: 80px;
+    height: 3px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: -120px;
+}
+
+.ruviaRoadmap .main-timeline .timeline-content:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    right: -125px;
+}
+
+.ruviaRoadmap .main-timeline .timeline-year {
+    color: var(--dark);
+    background: var(--white);
+    font-size: 40px;
+    font-weight: 400;
+    padding: 3px 20px 2px;
+    border-radius: 100px;
+    border: 5px solid var(--dark);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: -300px;
+}
+
+.ruviaRoadmap .main-timeline .title {
+    color: var(--white);
+    background: var(--dark);
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 10px 10px 9px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.ruviaRoadmap .main-timeline .description {
+    color: var(--dark);
+    background: linear-gradient(var(--white), var(--disabled));
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+.ruviaRoadmap .main-timeline .timeline:nth-child(even) {
+    float: right;
+    border: none;
+    border-left: 10px solid var(--dark);
+    box-shadow: -10px 0 var(--dark);
+    padding: 10px 0 10px 20px;
+    margin: 0 0 0 10px;
+}
+
+.ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-content:before {
+    right: auto;
+    left: -120px;
+}
+
+.ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-content:after {
+    right: auto;
+    left: -125px;
+}
+
+.ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-year {
+    right: auto;
+    left: -300px;
+}
+
+.ruviaRoadmap .timeline::before {
+    background-color: var(--white);
+}
+
+@media screen and (max-width:767px) {
+
+    .ruviaRoadmap .main-timeline .timeline,
+    .ruviaRoadmap .main-timeline .timeline:nth-child(even) {
+        width: 100%;
+        padding: 100px 0 20px 20px;
+        margin: 0 0 0 10px;
+        box-shadow: -10px 0 var(--dark);
+        border: none;
+        border-left: 10px solid var(--dark);
+        float: none;
+    }
+
+    .ruviaRoadmap .main-timeline .timeline-content:before,
+    .ruviaRoadmap .main-timeline .timeline-content:after,
+    .ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-content:before,
+    .ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-content:after {
+        top: -50px;
+        left: -20px;
+        width: 50px;
+    }
+
+    .ruviaRoadmap .main-timeline .timeline-content:after,
+    .ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-content:after {
+        width: 15px;
+        right: auto;
+        left: 15px;
+    }
+
+    .ruviaRoadmap .main-timeline .timeline-year,
+    .ruviaRoadmap .main-timeline .timeline:nth-child(even) .timeline-year {
+        transform: translateX(-50%);
+        top: -85px;
+        left: 50%;
+        right: auto;
+    }
+}
+
+/* #ruvia(ruviaRoadmap) #css ends  */
+
+/* #tense(tenseTeam) #css starts */
+.tenseTeam .our-team {
+    text-align: center;
+}
+
+.tenseTeam .our-team .pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.tenseTeam .our-team .pic:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--dark), rgba(236, 236, 1, 0.4));
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.tenseTeam .our-team:hover .pic:after {
+    opacity: 1;
+}
+
+.tenseTeam .our-team .pic img {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s ease 0s;
+}
+
+.tenseTeam .our-team:hover img {
+    transform: scale(1.8, 1.8);
+}
+
+.tenseTeam .our-team .social-link {
+    width: 80%;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    padding: 8px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    border: 2px solid var(--white);
+    opacity: 0;
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+.tenseTeam .our-team:hover .social-link {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.4s ease 0s;
+}
+
+.tenseTeam .our-team .social-link li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.tenseTeam .our-team .social-link li a {
+    display: inline-block;
+    font-size: 19px;
+    color: var(--white);
+}
+
+.tenseTeam .our-team .social-link li a:hover {
+    text-decoration: none;
+}
+
+.tenseTeam .our-team .post {
+    display: block;
+    font-size: 12px;
+    color: var(--tertiary);
+    margin-top: 15px;
+}
+
+.tenseTeam .our-team .team-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark);
+    letter-spacing: 1px;
+    margin: 8px 0 0 0;
+}
+
+.tenseTeam .our-team .team-title:after {
+    content: "";
+    display: block;
+    width: 20%;
+    margin: 15px auto;
+    border-bottom: 1px solid var(--dark);
+}
+
+.tenseTeam .our-team .description {
+    font-size: 14px;
+    color: var(--dark);
+    line-height: 25px;
+}
+
+@media screen and (max-width: 990px) {
+    .tenseTeam .our-team {
+        margin-bottom: 25px;
+    }
+}
+
+/* #tense(tenseTeam) #css ends */
+
+/* #rence(renceRegistration) #css starts */
+.renceRegistration h1 {
+    font-size: 30px;
+}
+
+.renceRegistration .btn {
+    color: #fff;
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+/* #rence(renceRegistration) #css starts */
+
+/* #trevor(trevorTestimonial) #css starts  */
+.trevorTestimonial a,
+.trevorTestimonial a:hover,
+.trevorTestimonial a:focus,
+.trevorTestimonial a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.trevorTestimonial a,
+.trevorTestimonial a:active,
+.trevorTestimonial a:focus {
+    color: var(--dark);
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+.trevorTestimonial img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.trevorTestimonial .testimonials .heading {
+    margin-bottom: 60px;
+}
+
+.trevorTestimonial .testimonials .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #313e4b;
+    margin-bottom: 20px;
+}
+
+.trevorTestimonial .testimonials .heading h2 span {
+    font-weight: 300;
+    color: var(--primary);
+    margin: 0;
+
+}
+
+.trevorTestimonial .testimonials .heading p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+    color: var(--dark);
+}
+
+.trevorTestimonial .testimonials .box {
+    box-shadow: 0 10px 30px var(--tertiary);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.trevorTestimonial .testimonials .box h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.trevorTestimonial .testimonials .box:hover {
+    transform: translateY(-10px);
+}
+
+.trevorTestimonial .testimonials .box h3 span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--tertiary);
+    margin-left: 10px;
+}
+
+.trevorTestimonial .testimonials .box p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    color: var(--disabled);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+.trevorTestimonial .testimonials .box .image img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.trevorTestimonial .testimonials .box .icon {
+    border: 1px solid var(--white);
+    color: var(--tertiary);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.trevorTestimonial .testimonials .box .icon:hover {
+    color: var(--tertiary);
+    border: 1px solid var(--tertiary);
+    background: var(--tertiary);
+}
+
+/* #trevor(trevorTestimonial) #css ends  */
+
+/* #feats(featsFaq) #css starts  */
+.featsFaq .btn-link {
+    color: #353935;
+}
+
+.featsFaq .btn-link:hover {
+    color: var(--primary);
+}
+
+.featsFaq h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* #feats(featsFaq) #css ends  */
+
+/* #caisy(caisyClients) #css starts  */
+.caisyClients .fdb-block img {
+    max-height: 30px;
+}
+
+/* #caisy(caisyClients) #css ends  */
+
+/* #corza(corzaContact) #css starts  */
+.corzaContact .map {
+    width: 100%;
+    height: 300px;
+    border: none
+}
+
+.corzaContact .btn {
+    color: var(--white);
+    border-color: var(--dark);
+    background-color: var(--dark);
+}
+
+.corzaContact .contact a {
+    font-size: 20px;
+}
+
+.corzaContact .contact {
+    font-size: 20px;
+}
+
+/* #corza(corzaContact) #css ends  */
+
+/* #fond(fondFooter) #css starts */
+.fondFooter img {
+    max-height: 60px
+}
+.fondFooter .mx-2{
+    color: var(--dark);
+}
+/* #fond(fondFooter) #css ends */

@@ -1,0 +1,66 @@
+✔ Basic Project Info
+
+Project Name: WebTalks
+
+⸻
+
+✔ Purpose:
+
+Deliver live and on-demand webinars that empower individuals and teams with actionable digital marketing knowledge. WebTalks connects learners with industry leaders through interactive sessions, campaign breakdowns, tool demos, and strategic insights—all accessible from anywhere.
+
+⸻
+
+✔ Training Type:
+
+Live & Recorded Webinars (Expert-Led, Case-Based Learning)
+
+⸻
+
+✔ Category:
+
+Education Technology (EdTech)
+
+⸻
+
+✔ Sub-category:
+
+Digital Marketing Webinars & Microlearning
+
+⸻
+
+✔ Inspiration:
+
+GrowthHackers, Moz Webinars, SEMrush Academy, CXL Live, MarketingProfs
+
+⸻
+
+✔ Target Audience:
+
+🔹 Digital Marketing Beginners Exploring the Field
+🔹 Mid-Level Marketers Seeking Tactical Insights
+🔹 Entrepreneurs and Startup Founders
+🔹 Marketing Teams Upskilling Collectively
+🔹 Agencies Looking to Train Junior Talent
+
+⸻
+
+✔ Design & Style:
+
+Visual Style: Crisp, modern, and media-first. The layout prioritises video content with clear session highlights, speaker bios, and replay options. Branded elements include neon accents, dark-light toggle, interactive chat, and CTA overlays. UX is designed for both live interactivity and passive rewatching, optimised across desktop and mobile.
+
+⸻
+
+✔ Keywords:
+
+🔹 Digital Marketing Webinars
+🔹 Expert Sessions
+🔹 Case Study Walkthroughs
+🔹 On-Demand Learning
+🔹 Interactive Q&A
+🔹 Campaign Strategy Breakdowns
+
+⸻
+
+✔ Showcase:
+
+WebTalks makes learning digital marketing dynamic, focused, and flexible. Whether attending live or catching replays, users get direct access to marketing veterans sharing real-world experience—from SEO audits and ad funnel design to influencer partnerships and analytics tools. With WebTalks, marketing education becomes a continuous, curated experience—driven by the industry’s best.
