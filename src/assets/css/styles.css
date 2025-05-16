@@ -2,6 +2,20 @@
 @import url(../styles/layout.css);
 @import url(../styles/fonts.css);
 
+    :root {
+        --primary: #00A2FF;
+        --secondary: #007ACC;
+        --tertiary: #005F99;
+        --white: #F5F5F5;
+        --dark: #353535;
+        --alert: #D32F2F;
+        --warning: #FFA000;
+        --success: #4CAF50;
+        --info: #2196F3;
+        --disabled: #BDBDBD;
+        --hover: #0086CC;
+        --shadow: rgba(0, 0, 0, 0.2);
+    }
 
 /* #nooks(nooksNavbar) #css starts  */
 .navbar{
@@ -15,7 +29,7 @@
 }
 
 .nooksNavbar .logo {
-    max-height: 50px
+    max-height: 150px !important
 }
 
 .nooksNavbar .navbar-open-icon {
@@ -493,7 +507,7 @@
 }
 
 .trevorTestimonial .testimonials .box .icon:hover {
-    color: var(--tertiary);
+    color: var(--white);
     border: 1px solid var(--tertiary);
     background: var(--tertiary);
 }
@@ -548,9 +562,112 @@
 
 /* #fond(fondFooter) #css starts */
 .fondFooter img {
-    max-height: 60px
+    max-height: 150px
 }
 .fondFooter .mx-2{
     color: var(--dark);
 }
 /* #fond(fondFooter) #css ends */
+
+/* #pluma(plumaPricing) #css starts  */
+.plumaPricing .price{
+    color:var(--primary);
+}
+.plumaPricing .btn{
+    background-color:var(--primary); 
+    border-radius: 30px;
+    font-weight: 600;
+ }
+ .plumaPricing .heading{ 
+    color:var(--primary)
+}
+.plumaPricing .icon{
+    font-size: 30px;
+    color: var(--primary);
+}
+/* #pluma(plumaPricing) #css ends  */
+
+/* #balor(balorBanner) #css starts  */
+.balorBanner header {
+    position: relative;
+    background-color: var(--dark);
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden
+}
+
+.balorBanner header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.balorBanner header .container {
+    position: relative;
+    z-index: 2
+}
+
+.balorBanner header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    opacity: 0.5;
+    z-index: 1
+}
+
+/* media query */
+@media (pointer: coarse) and (hover: none) {
+    .balorBanner header {
+        background: url("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4") var(--dark) no-repeat center center scroll
+    }
+
+    .balorBanner header video {
+        display: none
+    }
+}
+
+.balorBanner .glightbox_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.balorBanner .outer_circle {
+    stroke-width: 3;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 0;
+    stroke-linecap: square;
+    transition: all .4s ease-out;
+}
+
+.balorBanner .glightbox_video:hover .outer_circle {
+    stroke-dashoffset: 410;
+    transition: stroke .7s .4s ease-out, stroke-dashoffset .4s ease-out
+}
+
+.balorBanner .glightbox_video:hover .inner-circle {
+    fill: var(--primary);
+    transition: fill .4s .3s ease-out;
+
+}
+
+.balorBanner .glightbox_video:hover .play {
+    fill: var(--white);
+    transition: fill .4s .3s ease-out;
+}
+
+/* #balor(balorBanner) #css ends  */
