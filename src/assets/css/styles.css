@@ -1456,3 +1456,205 @@
 }
 
 /* #pan(panProduct) #css ends  */
+
+/* #paize(paizeProduct) #css starts  */
+.paizeProduct .product-grid {
+    text-align: center;
+    overflow: hidden;
+}
+
+.paizeProduct .product-grid .product-image {
+    position: relative;
+}
+
+.paizeProduct .product-grid .product-image a.image {
+    display: block;
+}
+
+.paizeProduct .product-grid .product-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.paizeProduct .product-grid .product-sale-label {
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+.paizeProduct .product-grid .product-sale-label span {
+    font-size: 14px;
+    display: block;
+}
+
+.paizeProduct .product-grid .shop-now {
+    color: var(--dark);
+    background-color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: capitalize;;
+    width: 115px;
+    padding: 12px 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.5s ease 0s;
+}
+
+.paizeProduct .product-grid .shop-now:hover {
+    color: var(--primary);
+}
+
+.paizeProduct .product-grid:hover .shop-now {
+    opacity: 1;
+}
+
+.paizeProduct .product-grid .product-content {
+    text-align: left;
+    padding: 15px 15px 5px;
+    position: relative;
+}
+
+.paizeProduct .product-grid .title {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 12px;
+}
+
+.paizeProduct .product-grid .title a {
+    color: var(--dark);
+    transition: all 0.3s ease 0s;
+}
+
+.paizeProduct .product-grid .title a:hover {
+    color: var(--primary);
+}
+
+.paizeProduct .product-grid .price {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 600;
+    width: calc(100% - 91px);
+    display: inline-block;
+}
+
+.paizeProduct .product-grid .price span {
+    color: var(--disabled);
+    font-size: 14px;
+    text-decoration: line-through;
+    margin: 0 5px 0 0;
+}
+
+.paizeProduct .product-grid .rating {
+    color: var(--disabled);
+    font-size: 13px;
+    width: 87px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.paizeProduct .product-grid .product-links {
+    background-color: var(--white);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 17px 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.35s;
+}
+
+.paizeProduct .product-grid:hover .product-links {
+    top: 0;
+}
+
+.paizeProduct .product-grid .product-links li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.paizeProduct .product-grid .product-links li a {
+    color: var(--dark);
+    background: var(--white);
+    font-size: 16px;
+    text-align: center;
+    line-height: 43px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+
+.paizeProduct .product-grid:hover .product-links li a:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.paizeProduct .product-grid .product-links li a:before,
+.paizeProduct .product-grid .product-links li a:after {
+    content: attr(data-tip);
+    color: var(--white);
+    background-color: var(--dark);
+    font-size: 11px;
+    line-height: 18px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: none;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -33px;
+    transition: all 0.3s ease 0s;
+}
+
+.paizeProduct .product-grid .product-links li a:after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    transform: translateX(-50%) rotate(45deg);
+    top: -22px;
+    z-index: -1;
+}
+
+.paizeProduct .product-grid .product-links li a:hover:before,
+.paizeProduct .product-grid .product-links li a:hover:after {
+    display: block;
+}
+
+.paizeProduct .product-grid .product-links li:first-child a:before,
+.paizeProduct .product-grid .product-links li:first-child a:after {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .paizeProduct .product-grid {
+        margin: 0 0 30px;
+    }
+}
+
+/* #paize(paizeProduct) #css ends  */
